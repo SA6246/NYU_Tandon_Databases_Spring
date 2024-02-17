@@ -2,6 +2,9 @@
 
 ## Overview
 
+> [!NOTE]
+> Follow this youtube [guide](https://www.youtube.com/watch?v=IDs55RHzivI) for importing an external Python Notebook (`.ipynb`) into Google Colaboratory. Obviously you'll need to step up google collab and this readme won't cover that.
+
 This Google Colab notebook guides you through the process of setting up a MySQL database using the `createguitar.sql` file. The notebook covers the following steps:
 
 1. **Download the `createguitar.sql` File:**
