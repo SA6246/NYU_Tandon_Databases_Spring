@@ -31,13 +31,7 @@ The ER diagram depicts the structure of a shoe store database, showcasing entiti
 
 ### Model
 
-
-<img src="https://github.com/SA6246/NYU_Tandon_Databases_Spring/assets/81187590/c023748b-080f-4b80-8385-c05612c03e20" alt="image" width="300">
-
-### Mermaid Code
-
-
-```
+```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     CUSTOMER {
