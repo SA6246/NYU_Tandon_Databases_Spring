@@ -113,18 +113,4 @@ CREATE TABLE supplier_products (
     REFERENCES products (product_id)
 );
 -- Print success message
-SELECT 'Database and tables created successfully!' AS Message; 
-
--- Insert data into customers table
-INSERT INTO customers (first_name, last_name, email, phone, address) VALUES
-('John', 'Doe', 'john.doe@example.com', '123-456-7890', '123 Main St, Anytown, USA'),
-('Jane', 'Smith', 'jane.smith@example.com', '456-789-0123', '456 Elm St, Othertown, USA'),
-('Alice', 'Johnson', 'alice.johnson@example.com', '789-012-3456', '789 Oak St, Anothertown, USA');
--- Insert data into orders table
-INSERT INTO orders (customer_id, order_date, ship_amount, tax_amount, ship_date, ship_address, card_type, card_number, card_expires, billing_address) VALUES
-(1, '2024-04-07 10:00:00', 10.00, 5.00, '2024-04-09 10:00:00', '123 Main St, Anytown, USA', 'Visa', '4111111111111111', '04/26', '123 Main St, Anytown, USA'),
-(2, '2024-04-07 11:00:00', 10.00, 5.00, '2024-04-09 11:00:00', '456 Elm St, Othertown, USA', 'MasterCard', '5555555555554444', '05/27', '456 Elm St, Othertown, USA'),
-(3, '2024-04-07 12:00:00', 10.00, 5.00, '2024-04-09 12:00:00', '789 Oak St, Anothertown, USA', 'American Express', '378282246310005', '06/28', '789 Oak St, Anothertown, USA');
--- Insert data into products table
-INSERT INTO products (category_id, product_code, product_name, description, list_price, discount_percent, date_added, manufacturer, material) VALUES
-(1, 'guitar1', 'Acoustic Guitar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec velit vitae tortor luctus feugiat. Integer eu neque vitae turpis cursus lacinia.', 299.99, 0.00
+SELECT 'Database and tables created successfully!' AS Message;
