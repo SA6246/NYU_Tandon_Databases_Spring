@@ -127,4 +127,6 @@ INSERT INTO orders (customer_id, order_date, ship_amount, tax_amount, ship_date,
 (3, '2024-04-07 12:00:00', 10.00, 5.00, '2024-04-09 12:00:00', '789 Oak St, Anothertown, USA', 'American Express', '378282246310005', '06/28', '789 Oak St, Anothertown, USA');
 -- Insert data into products table
 INSERT INTO products (category_id, product_code, product_name, description, list_price, discount_percent, date_added, manufacturer, material) VALUES
-(1, 'guitar1', 'Acoustic Guitar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec velit vitae tortor luctus feugiat. Integer eu neque vitae turpis cursus lacinia.', 299.99, 0.00)
+(1, 'guitar1', 'Acoustic Guitar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec velit vitae tortor luctus feugiat. Integer eu neque vitae turpis cursus lacinia.', 299.99, 0.00, '2023-01-01', 'Gibson', 'Mahogany'),
+(1, 'guitar2', 'Electric Guitar', 'Sed eu leo vel purus mollis facilisis. Fusce volutpat lorem id mi malesuada convallis. Vestibulum hendrerit diam et sapien eleifend, nec sollicitudin risus dignissim.', 599.99, 0.00, '2023-01-02', 'Fender', 'Maple'),
+(2, 'bass1', 'Electric Bass Guitar', 'Vestibulum tempus, sem id ultricies ultrices, tortor felis convallis felis, non vestibulum dolor odio nec metus. Nam eget laoreet lacus.', 499.99, 0.00, '2023-01-03', 'Ibanez', 'Basswood');
