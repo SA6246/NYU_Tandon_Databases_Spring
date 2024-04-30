@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>SQL Query</title>
+            <!-- Bootstrap CSS -->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body {
+                    padding: 50px;
+                }
+                .container {
+                    max-width: 600px;
+                    margin: auto;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <!-- Header -->
+                <h1 class="mb-4">Enter Your SQL Query</h1>
+                <!-- Instruction -->
+                <p class="mb-4">Please enter your SQL query below:</p>
+                <!-- Input field for SQL query -->
+                <form action="/execute_query" method="post">
+                    <div class="form-group">
+                        <label for="sqlQuery">SQL Query:</label>
+                        <textarea class="form-control" id="sqlQuery" name="sqlQuery" rows="4"></textarea>
+                    </div>
+                    <!-- Button to submit the form -->
+                    <button type="submit" class="btn btn-primary mt-3">Execute Query</button>
+                </form>
+                
+                <!-- Output Section -->
+                <!-- Section to display the output of the query -->
+                <div class="mt-5">
+                    <h2>Output</h2>
+                    <!-- Apply CSS styles for resizing and styling the output -->
+                    <div id="output" class="border p-3" style="max-width: fit-content; max-height: 400px; overflow: auto;">{{ output|safe }}</div>
+                </div>
+                <!-- Operation info Section -->
+                <div class="mt-5">
+                    <h2>Operation Info</h2>
+                    <p>{{ operation_info|safe }}</p>
+                </div>
+
+            <!-- Bootstrap JS and dependencies -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>
